@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URM Application</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Simple typography */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+        header nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Main content styling */
+        main {
+            padding: 20px;
+        }
+        main section {
+            margin-bottom: 20px;
+        }
+        main section h1, main section h2 {
+            margin-bottom: 10px;
+        }
+        main section p {
+            margin-bottom: 10px;
+        }
+        main section button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive image */
+        main section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* ...previous CSS here... */
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Search and filter styling */
+        .search-filter {
+            margin-bottom: 20px;
+        }
+        .search-filter input, .search-filter select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login/Register</a></li>
+            <li><a href="#"><img src="search_icon.png" alt="Search"></a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Student Dashboard</h2>
+    <div class="search-filter">
+        <input type="text" placeholder="Search">
+        <select>
+            <option value="">Filter by Nationality</option>
+            <!-- Add options here -->
+        </select>
+        <select>
+            <option value="">Filter by Education</option>
+            <!-- Add options here -->
+        </select>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Nationality</th>
+            <th>Education</th>
+            <!-- Add more columns as needed -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>American</td>
+            <td>PhD</td>
+            <!-- Add more cells as needed -->
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>American</td>
+            <td>PhD</td>
+            <!-- Add more cells as needed -->
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>American</td>
+            <td>PhD</td>
+            <!-- Add more cells as needed -->
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>American</td>
+            <td>PhD</td>
+            <!-- Add more cells as needed -->
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>American</td>
+            <td>PhD</td>
+            <!-- Add more cells as needed -->
+        </tr><tr>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+            <td>123-456-7890</td>
+            <td>American</td>
+            <td>PhD</td>
+            <!-- Add more cells as needed -->
+        </tr>
+
+        <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <!-- Add your footer information here -->
+</footer>
+</body>
+</html>
+
