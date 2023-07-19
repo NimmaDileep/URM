@@ -85,16 +85,14 @@ header nav ul li a {
     border-radius: 5px;
     width: 150px;
     margin-top: 150px;
+    cursor: pointer;
 }
 
 .homepage-section {
     flex: 1 1 300px;
     text-align: center;
 }
-#search-icon{
-    /*background: white;*/
-;
-}
+
 .main-body{
     background: azure;
 }
@@ -104,4 +102,9 @@ header nav ul li a {
 #btn-function{
     color: #007BFF;
     font-weight: bold;
+}
+
+#search-icon{
+    width: 20px;
+    height: 20px;
 }
