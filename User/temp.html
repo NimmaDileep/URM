@@ -1,0 +1,211 @@
+<!--&lt;!&ndash;<!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html lang="en">&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta charset="UTF-8">&ndash;&gt;-->
+<!--&lt;!&ndash;  <meta name="viewport" content="width=device-width, initial-scale=1.0">&ndash;&gt;-->
+<!--&lt;!&ndash;  <title>URM Application - Login/Register</title>&ndash;&gt;-->
+<!--&lt;!&ndash;  <style>&ndash;&gt;-->
+<!--&lt;!&ndash;    /* Basic reset */&ndash;&gt;-->
+<!--&lt;!&ndash;    * {&ndash;&gt;-->
+<!--&lt;!&ndash;      margin: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;      padding: 0;&ndash;&gt;-->
+<!--&lt;!&ndash;      box-sizing: border-box;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    /* Simple typography */&ndash;&gt;-->
+<!--&lt;!&ndash;    body {&ndash;&gt;-->
+<!--&lt;!&ndash;      font-family: Arial, sans-serif;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    /* Header styling */&ndash;&gt;-->
+<!--&lt;!&ndash;    header {&ndash;&gt;-->
+<!--&lt;!&ndash;      background-color: #333;&ndash;&gt;-->
+<!--&lt;!&ndash;      color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;      padding: 10px 0;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    header nav ul {&ndash;&gt;-->
+<!--&lt;!&ndash;      display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;      justify-content: space-around;&ndash;&gt;-->
+<!--&lt;!&ndash;      list-style-type: none;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    header nav ul li a {&ndash;&gt;-->
+<!--&lt;!&ndash;      color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;      text-decoration: none;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    /* Main content styling */&ndash;&gt;-->
+<!--&lt;!&ndash;    main {&ndash;&gt;-->
+<!--&lt;!&ndash;      padding: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    main section {&ndash;&gt;-->
+<!--&lt;!&ndash;      margin-bottom: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    main section h1, main section h2 {&ndash;&gt;-->
+<!--&lt;!&ndash;      margin-bottom: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    main section p {&ndash;&gt;-->
+<!--&lt;!&ndash;      margin-bottom: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    /* Form styling */&ndash;&gt;-->
+<!--&lt;!&ndash;    form {&ndash;&gt;-->
+<!--&lt;!&ndash;      display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;      flex-direction: column;&ndash;&gt;-->
+<!--&lt;!&ndash;      margin-bottom: 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    form input {&ndash;&gt;-->
+<!--&lt;!&ndash;      padding: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;      margin-bottom: 10px;&ndash;&gt;-->
+<!--&lt;!&ndash;      border: 1px solid #ddd;&ndash;&gt;-->
+<!--&lt;!&ndash;      border-radius: 5px;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    form button {&ndash;&gt;-->
+<!--&lt;!&ndash;      padding: 10px 20px;&ndash;&gt;-->
+<!--&lt;!&ndash;      background-color: #007BFF;&ndash;&gt;-->
+<!--&lt;!&ndash;      color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;      border: none;&ndash;&gt;-->
+<!--&lt;!&ndash;      border-radius: 5px;&ndash;&gt;-->
+<!--&lt;!&ndash;      cursor: pointer;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    form a {&ndash;&gt;-->
+<!--&lt;!&ndash;      color: #007BFF;&ndash;&gt;-->
+<!--&lt;!&ndash;      text-decoration: none;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    .container {&ndash;&gt;-->
+<!--&lt;!&ndash;      display: flex;&ndash;&gt;-->
+<!--&lt;!&ndash;      justify-content: space-between;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    .container > div {&ndash;&gt;-->
+<!--&lt;!&ndash;      width: 45%;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--&lt;!&ndash;    /* Footer styling */&ndash;&gt;-->
+<!--&lt;!&ndash;    footer {&ndash;&gt;-->
+<!--&lt;!&ndash;      background-color: #333;&ndash;&gt;-->
+<!--&lt;!&ndash;      color: #fff;&ndash;&gt;-->
+<!--&lt;!&ndash;      padding: 10px 0;&ndash;&gt;-->
+<!--&lt;!&ndash;      text-align: center;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;  </style>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;<header>&ndash;&gt;-->
+<!--&lt;!&ndash;  <nav>&ndash;&gt;-->
+<!--&lt;!&ndash;    <ul>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li><a href="#">Home</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li><a href="#">About</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li><a href="#">Services</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li><a href="#">Contact</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li><a href="#">Login/Register</a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;      <li><a href="#"><img src="search_icon.png" alt="Search"></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;  </nav>&ndash;&gt;-->
+<!--&lt;!&ndash;</header>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<main class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <h2>Login</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;    <form>&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="email" name="email" placeholder="Email">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="password" name="password" placeholder="Password">&ndash;&gt;-->
+<!--&lt;!&ndash;      <button type="submit">Sign In</button>&ndash;&gt;-->
+<!--&lt;!&ndash;    </form>&ndash;&gt;-->
+<!--&lt;!&ndash;    <a href="#">Forgot Password?</a>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;  <div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <h2>Register</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;    <form>&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="text" name="first_name" placeholder="First Name">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="text" name="last_name" placeholder="Last Name">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="email" name="email" placeholder="Email">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="date" name="dob" placeholder="Date of Birth">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="password" name="password" placeholder="Password">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input type="password" name="confirm_password" placeholder="Confirm Password">&ndash;&gt;-->
+<!--&lt;!&ndash;      <button type="submit">Register</button>&ndash;&gt;-->
+<!--&lt;!&ndash;    </form>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+<!--&lt;!&ndash;</main>&ndash;&gt;-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>Login and Registration</title>-->
+<!--  <link rel="stylesheet" href="styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<header>-->
+<!--  &lt;!&ndash; Add your header information here &ndash;&gt;-->
+<!--  <nav>-->
+<!--    <ul>-->
+<!--      <li><a href="#">Home</a></li>-->
+<!--      <li><a href="#">About</a></li>-->
+<!--      <li><a href="#">Services</a></li>-->
+<!--      <li><a href="#">Contact</a></li>-->
+<!--      <li><a href="#">Login/Register</a></li>-->
+<!--      <li><a href="#"><img src="../icons/search-icon.png" alt="Search"></a></li>-->
+<!--    </ul>-->
+<!--  </nav>-->
+<!--</header>-->
+
+<!--<div class="container">-->
+<!--  <div class="login-reg-panel">-->
+
+<!--    <div class="register-info-box">-->
+<!--      <h2>Don't have an account?</h2>-->
+<!--      <p>Join us and start your journey!</p>-->
+<!--      <button id="register-btn" onclick="registerBtn()">Register</button>-->
+<!--    </div>-->
+
+<!--    <div class="login-info-box">-->
+<!--      <h2>Have an account?</h2>-->
+<!--      <p>Log in and let's get started!</p>-->
+<!--      <button id="login-btn" onclick="loginBtn()">Login</button>-->
+<!--    </div>-->
+
+<!--    <div class="white-panel">-->
+<!--      <div class="login-show" id="login-form">-->
+<!--        <h2>LOGIN</h2>-->
+<!--        <form action="#">-->
+<!--          <input type="text" placeholder="Email">-->
+<!--          <input type="password" placeholder="Password">-->
+<!--          <input type="submit" value="Login">-->
+<!--        </form>-->
+<!--        <a href="">Forgot password?</a>-->
+<!--      </div>-->
+<!--      <div class="register-show" id="register-form" style="display: none;">-->
+<!--        <h2>REGISTER</h2>-->
+<!--        <form action="#">-->
+<!--          <input type="text" placeholder="Institution Name">-->
+<!--          <input type="text" placeholder="Email">-->
+<!--          <input type="text" placeholder="Phone">-->
+<!--          <input type="text" placeholder="Address">-->
+<!--          <input type="password" placeholder="Password">-->
+<!--          <input type="submit" value="Register">-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<footer>-->
+<!--  &lt;!&ndash; Add your footer information here &ndash;&gt;-->
+<!--</footer>-->
+
+<!--<script>-->
+<!--  function registerBtn(){-->
+<!--    document.getElementById("login-form").style.display = "none";-->
+<!--    document.getElementById("register-form").style.display = "block";-->
+<!--  }-->
+
+<!--  function loginBtn() {-->
+<!--    document.getElementById("login-form").style.display = "block";-->
+<!--    document.getElementById("register-form").style.display = "none";-->
+<!--  }-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->

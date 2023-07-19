@@ -1,0 +1,160 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Simple typography */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+main section {
+    margin-bottom: 20px;
+}
+main section h1, main section h2 {
+    margin-bottom: 10px;
+}
+main section p {
+    margin-bottom: 10px;
+}
+
+/* Form styling */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.form-container .column {
+    width: 45%;
+}
+.form-container .column .field {
+    margin-bottom: 20px;
+}
+.form-container .column .field input, .form-container .column .field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.form-container .column .field label {
+    margin-bottom: 10px;
+    display: block;
+}
+.form-container button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Basic Reset */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f6f6;
+}
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-info-box, .register-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-info-box {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.register-info-box {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.login-info-box form, .register-info-box form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.login-info-box input, .register-info-box input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-info-box input[type="submit"], .register-info-box input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-info-box input[type="submit"]:hover, .register-info-box input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.login-info-box a, .register-info-box a {
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,113 @@
+<!-- URM Profile Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ... -->
+</head>
+<body>
+<!-- ...Header... -->
+<style>
+  /* ...previous CSS here... */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Simple typography */
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header styling */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  main {
+    padding: 20px;
+  }
+  main section {
+    margin-bottom: 20px;
+  }
+  main section h1, main section h2 {
+    margin-bottom: 10px;
+  }
+  main section p {
+    margin-bottom: 10px;
+  }
+
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  form input, form textarea, form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  form button:hover {
+    background-color: #0056b3;
+  }
+  form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  form a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Login/Register</a></li>
+      <li><a href="#"><img src="../icons/search-icon.png" alt="Search"></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Your Profile</h2>
+  <p>Manage your profile information, upload additional documents, and make your profile visible to academics searching for potential URM candidates.</p>
+
+  <!-- ...Profile Details... -->
+
+  <form>
+    <!-- ...Profile Editing Fields... -->
+    <button type="submit">Save Changes</button>
+  </form>
+</main>
+
+<!-- ...Footer... -->
+</body>
+</html>
