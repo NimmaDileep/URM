@@ -4,54 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>URM Application</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <script>
+        // function startFunction(){
+        //     document.getElementById("homepage-container").style.display = "none";
+        // }
+        function getStarted(){
+            document.getElementById("homepage-container").style.display = "block";
+
+        }
+    </script>
 </head>
-<body>
-<header>
+<!--<body onload="startFunction()">-->
+<body >
+<header id = "header-text">
     <nav>
         <ul>
+            <li><a href="#"><h1>URM Application</h1></a></li>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="#">Login/Register</a></li>
-            <li><a href="#"><img src="../icons/search-icon.png" alt="Search"></a></li>
+            <li><a href="#"><img id = "search-icon" src="icons/search-icon.png" alt="Search"></a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section>
-        <h1>URM Application</h1>
-        <p>Welcome to URM Application, a one-stop solution for enhancing diversity in academia. Whether you're an academic institution seeking URM candidates, an URM applicant seeking positions, a DEI officer aiming for better diversity, or a recruiter scouting talent, we're here to connect you. Sign up or log in to get started.</p>
-        <div style="display: flex; justify-content: center">
-            <button>Get Started</button>
+<main class="main-body">
+    <div class = "homepage-heading">
+        <h1>Empowering Diversity in Academia: A Website Connecting Underrepresented Minority Candidates with PhD, Postdoc, and Faculty Opportunities</h1>
+        <button id="btn-function" onclick="getStarted()">Get Started</button>
+    </div>
+
+    <div class="homepage-container" id="homepage-container">
+        <div class="homepage-section">
+            <h2>Academia</h2>
+            <p>Looking for talent that will enrich your institution's cultural fabric? Sign up to access a carefully curated list of potential URM candidates for PhD studies, postdoc, and faculty positions.</p>
+            <button>Sign Up / Log In</button>
         </div>
-    </section>
 
-    <section class="homepage-section">
-        <h2>Academia</h2>
-        <p>Looking for talent that will enrich your institution's cultural fabric? Sign up to access a carefully curated list of potential URM candidates for PhD studies, postdoc, and faculty positions.</p>
-        <button>Sign Up / Log In</button>
-    </section>
+        <div class="homepage-section">
+            <h2>URM Applicants</h2>
+            <p>Ready to take the next step in your academic journey? Sign up to discover universities that value diversity and have opportunities for postdoc or faculty positions that are just right for you.</p>
+            <button>Sign Up / Log In</button>
+        </div>
 
-    <section class="homepage-section">
-        <h2>URM Applicants</h2>
-        <p>Ready to take the next step in your academic journey? Sign up to discover universities that value diversity and have opportunities for postdoc or faculty positions that are just right for you.</p>
-        <button>Sign Up / Log In</button>
-    </section>
+        <div class="homepage-section">
+            <h2>Recruiters</h2>
+            <p>Scouting for diverse talent to meet your clients' needs? Sign up to connect with URM candidates and discover universities that are striving to enhance diversity.</p>
+            <button>Sign Up / Log In</button>
+        </div>
 
-    <section class="homepage-section">
-        <h2>Recruiters</h2>
-        <p>Scouting for diverse talent to meet your clients' needs? Sign up to connect with URM candidates and discover universities that are striving to enhance diversity.</p>
-        <button>Sign Up / Log In</button>
-    </section>
-
-    <section class="homepage-section">
-        <h2>DEI Officers</h2>
-        <p>Striving to enhance diversity at your institution? Sign up to gain insights into colleges and universities where diversity needs a boost, and connect with URM candidates who can make a difference.</p>
-        <button>Sign Up / Log In</button>
-    </section>
+        <div class="homepage-section">
+            <h2>DEI Officers</h2>
+            <p>Striving to enhance diversity at your institution? Sign up to gain insights into colleges and universities where diversity needs a boost, and connect with URM candidates who can make a difference.</p>
+            <button>Sign Up / Log In</button>
+        </div>
+    </div>
 </main>
 
 <footer>
@@ -59,26 +69,3 @@
 </footer>
 </body>
 </html>
-
-
-<!--URM Application-->
-
-<!--Description of Application-->
-<!--To build a website that meets the requirements of providing:-->
-
-<!--1) Academia a list of potential underrepresented minority (URM) candidates for PhD studies, postdoc,-->
-<!--and faculty positions.-->
-
-<!--2) An URM candidate a list of Potential Universities to apply for postdoc or Faculty position-->
-
-<!--3) Diversity, Equity, and Inclusion (DEI) Officer: a potential list of Colleges and Universities where-->
-<!--diversity is missing-->
-
-<!--4) Recruiter-->
-
-
-<!--Homepage: -->
-
-<!--The homepage of the website should provide a brief overview of the website's purpose and-->
-<!--services. It should have a clear call to action for academia to sign up or log in to access the list of URM-->
-<!--candidates, for URM Applicants , for Recruiters, For DEI officers.-->
